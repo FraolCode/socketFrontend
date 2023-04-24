@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
+const URL = "https://socketbackend-production.up.railway.app/5000"
 
-const socket = io(process.env.REACT_APP_SOCKET_URL);
+const socket = io(URL);
 const MAX_PLAYERS = 5;
 
 function App() {
